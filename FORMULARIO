@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+</head>
+<body>
+
+<form action="http://ncoge.com/phps/formulario.php" method="post" enctype="multipart/form-data">
+
+<table border="0" width="100%">
+<tr>
+
+<td valign="top" width="50%">
+
+    <fieldset>
+        <legend><b>Datos personales:</b></legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" size="40" value="">
+        <br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" size="40" value="">
+        <br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo" size="40" value="">
+        <br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <textarea name="hobbies" id="hobbies" cols="45" rows="5"></textarea>
+        <br><br>
+
+    </fieldset>
+
+</td>
+
+<td valign="top" width="50%">
+
+    <fieldset>
+        <legend><b>Idiomas</b></legend>
+        Puntúa tu nivel de idiomas de 1 a 5:
+        <br><br>
+
+        Inglés:
+        <input type="radio" name="ingles" value="1" checked>1
+        <input type="radio" name="ingles" value="2">2
+        <input type="radio" name="ingles" value="3">3
+        <input type="radio" name="ingles" value="4">4
+        <input type="radio" name="ingles" value="5">5
+        <br><br>
+
+        Francés:
+        <input type="radio" name="frances" value="1" checked>1
+        <input type="radio" name="frances" value="2">2
+        <input type="radio" name="frances" value="3">3
+        <input type="radio" name="frances" value="4">4
+        <input type="radio" name="frances" value="5">5
+        <br><br>
+
+        Alemán:
+        <input type="radio" name="aleman" value="1" checked>1
+        <input type="radio" name="aleman" value="2">2
+        <input type="radio" name="aleman" value="3">3
+        <input type="radio" name="aleman" value="4">4
+        <input type="radio" name="aleman" value="5">5
+        <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Domino los siguientes programas:</legend>
+
+        Writer: <input type="checkbox" name="writer" value="si" checked>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Calc: <input type="checkbox" name="calc" value="si">
+        <br><br>
+
+        Base: <input type="checkbox" name="base" value="si" checked>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Impress: <input type="checkbox" name="impress" value="si">
+    </fieldset>
+
+    <fieldset>
+        <legend>Trabajo con el siguiente Sistema Operativo:</legend>
+        <select name="sistema">
+            <option value="linux" selected>Linux</option>
+            <option value="windows">Windows</option>
+            <option value="macos">MacOS</option>
+        </select>
+    </fieldset>
+
+</td>
+
+</tr>
+</table>
+
+<br><br>
+
+<center>
+<input type="image" src="enviar.png" 
+       alt="Enviar" width="50">
+
+<input type="reset" value="Reiniciar">
+</center>
+
+</form>
+
+</body>
+</html>
