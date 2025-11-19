@@ -1,4 +1,46 @@
-background {
-color:yellow
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("fondo.jpg"); 
+    background-size: cover;             
+    background-position: center;        
+    background-attachment: fixed;       
 }
 
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+img {   
+    display: block;
+    margin: 30px auto;
+    width: 700px;
+}
+
+table {
+    margin: 20px auto;
+    width: 800px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    color: white;
+}
+
+th:nth-child(1) { background-color: red; }
+th:nth-child(2) { background-color: green; }
+
+td:nth-child(1) { font-weight: bold; }
+
+td[bgcolor] { color: black; }
