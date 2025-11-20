@@ -22,13 +22,14 @@ h1 {
 
 .contenedor {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
+    gap: 20px;                 
+    flex-wrap: wrap; 
 }
 
 img {   
-    width: 700px;        
     margin: 0;
     border-radius:25px;
     border:10px red solid;
@@ -36,9 +37,14 @@ img {
 }
 
 table {
-    width: 700px;         
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+    img, table {
+    width: 100%;
+    max-width: 700px;  
+    height: auto;
 }
 
 th, td {
