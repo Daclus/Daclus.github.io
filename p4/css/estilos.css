@@ -1,42 +1,69 @@
 body {
 
-    align-items: center;
-    align-content: center;
-
+    MARGIN: 0;
     font-family: Arial, sans-serif;
 
     background-image: url("p4/images/fondo.jpg"); 
     background-repeat:no-repeat;
-    background-attachment: fixed;
     background-size: cover;             
     background-position: top center;        
     background-attachment: fixed; 
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
-    background-color: gainsboro;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+
+    background-color: #d3d3d3;        
     color: white;
-    border-left-width: 10px;
-    border-left-style:solid;
-    border-left-color:red
+    font-size: 2em;
+
+    border-left: 10px solid red;
 
 }
 
 img {
-    justify-content: center;
-    margin: 0;
-    border-radius:25px;
-    border:10px black solid;
+    display: block;
+    margin: 40px auto;
+
+    border-radius: 25px;
+    border: 10px solid black;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
 
 }
 
 ul {
-
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;    
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 li {
+ display: inline-block;
+}
 
+li a {
+    
+    display: inline-block;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: normal;
+
+    padding: 3px 8px;
+    background: white;
+    border: 1px solid #0033cc;
+    color: #0033cc;
+
+    border-radius: 3px;
 }
 
