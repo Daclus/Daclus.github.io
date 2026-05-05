@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si o No</title>
+</head>
+<body>
+<h1>Ricky y Morty</h1>
+<input type="button" value="Dame" id="boton">
+<br>
+<img src="" id="imagen">
+<div id="resultado"></div>
+
+
+<script>
+let url="https://rickandmortyapi.com/api/character/?gender=female"
+let boton=document.getElementById("boton")
+let resultado=document.getElementById("resultado")
+let imagen=document.getElementById("imagen")
+
+function numeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+boton.addEventListener("click", () =>{
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        let personajes = data.results
+
+        let index = numeroAleatorio(0, personajes.length - 1)
+        let personaje = personajes[index]
+
+        resultado.innerHTML = personaje.name
+        imagen.src = personaje.image
+    })
+})
+</script>
+</body>
